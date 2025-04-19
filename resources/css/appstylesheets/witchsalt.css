@@ -1,0 +1,135 @@
+main {
+    background-color: var(--ds_green_grey);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--ds_dark_green);
+  }
+  
+  /* Game Interface */
+  .witchsalt-interface {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+  
+    /* Leftside Toolbar */
+  .leftside-toolbar {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    max-height: 800px;
+  }
+  
+  .equipped,
+  .unequipped {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .spell-book,
+  .inventory {
+    width: 100px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .spells,
+  .armory {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Game Area*/
+  .game-area {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    max-height: 800px;
+  }
+  
+    /* Logs */
+  .logs {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+    /* Bottom Toolbar */
+  .stats,
+  .dice-rolls {
+    width: 600px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .player-status {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .player-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .dice-header {
+    text-align: center;;
+  }
+  
+  .dice-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* Media Queries */
+  /* Small Screens */
+    /* Portrait styles for small screens */ 
+@media (orientation: portrait) and (max-width: 600px) {
+  
+}
+
+    /* Landscape styles for small screens */
+@media (max-width: 600px) and (orientation: landscape) {
+  
+}
+
+  /* Medium Screens */
+    /* Portrait styles for medium screens */
+@media (min-width: 601px) and (max-width: 1024px) and (orientation: portrait) {
+
+}
+    /* Landscape styles for medium screens */
+@media (min-width: 601px) and (max-width: 1024px) and (orientation: landscape) {
+  
+}
+
+  /* Large Screens */
+      /* Large screen styles */
+@media (min-width: 1025px) {
+
+}
+
+@media print {
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+  }
+}

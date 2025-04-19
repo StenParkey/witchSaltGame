@@ -1,14 +1,21 @@
 // Backend loading for WitchSalt.js and  witch Salt Apps
 console.log('loading scripts.js...');
-const loadingWitchSaltScripts = document.querySelector('head');
-const witchSaltScripts = document.createElement('div');
-witchSaltScripts.id = 'witchsalt-scripts';
-witchSaltScripts.innerHTML = `
-  <script src="./resources/js/witchsalt.js" defer></script>
-  <!--Temp Scripts for Individual Apps-->
-  <script src="./resources/js/witchsaltapps/dnddice.js" defer></script>
-  <script src="./resources/js/witchsaltapps/spellbook.js" defer></script>`;
-loadingWitchSaltScripts.appendChild(witchSaltScripts);
+const scripts = [
+  './resources/js/witchsalt.js',
+  './resources/js/witchsaltapps/dnddice.js',
+  './resources/js/witchsaltapps/spellbook.js'
+];
+
+scripts.forEach((src) => {
+  if (src.startsWith('./resources/js/')) { // Validate the URL
+    const script = document.createElement('script');
+    script.src = src;
+    script.defer = true;
+    document.head.appendChild(script);
+  } else {
+    console.error(`Invalid script URL: ${src}`);
+  }
+});
 console.log('WitchSalt scripts loaded successfully!');
 
 // Function for Search Bar form
@@ -24,9 +31,12 @@ document.getElementById('ee-search-bar').addEventListener('keypress', (event) =>
   }
 });
 
+// Variable to track if an app is already running
+let isRunning = false;
+
 function handleSearch() {
   const searchInput = document.getElementById('ee-search-bar').value.trim().toLowerCase();
-  let isRunning = false;
+  
 
   if (searchInput === 'dnd dice') {
     if (isRunning === false) {

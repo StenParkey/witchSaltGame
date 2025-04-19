@@ -51,107 +51,12 @@ header {
   font-size:37px;
 }
 
-/* Main Content Area */
-main {
-  background-color: var(--ds_green_grey);
+nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border: 1px solid var(--ds_dark_green);
-}
-
-/* Game Interface */
-.witchsalt-interface {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: auto;
-}
-
-  /* Leftside Toolbar */
-.leftside-toolbar {
-  display: flex;
-  flex-direction: column;
-  max-width: 200px;
-  max-height: 800px;
-}
-
-.equipped,
-.unequipped {
-  display: flex;
-  flex-direction: row;
-}
-
-.spell-book,
-.inventory {
-  width: 100px;
-  height: 700px;
-  display: flex;
-  flex-direction: column;
-}
-
-.spells,
-.armory {
-  width: 100px;
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Game Area*/
-.game-area {
-  display: flex;
-  flex-direction: column;
-  max-width: 600px;
-  max-height: 800px;
-}
-
-  /* Logs */
-.logs {
-  width: 600px;
-  height: 600px;
-  display: flex;
-  flex-direction: row;
-}
-
-  /* Bottom Toolbar */
-.stats,
-.dice-rolls {
-  width: 600px;
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-}
-
-.player-status {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 100%;
-  height: 100%;
-}
-
-.player-stats {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
-  height: 100%;
-}
-
-.dice-header {
-  text-align: center;;
-}
-
-.dice-buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  padding-bottom: 20px;
 }
 
 /* Media Queries */
