@@ -6,6 +6,15 @@ main {
     align-items: center;
     border: 1px solid var(--ds_dark_green);
   }
+
+  .witchsalt-interface,
+  .leftside-toolbar, 
+  .game-area, 
+  .logs, 
+  .stats, 
+  .dice-rolls {
+    border: 1px solid var(--ds_dark_green);
+  } 
   
   /* Game Interface */
   .witchsalt-interface {
