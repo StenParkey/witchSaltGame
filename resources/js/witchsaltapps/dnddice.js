@@ -1,10 +1,11 @@
 
 function startGame() {
     const diceRollGameApp = document.querySelector('main');
+    diceRollGameApp.innerHTML = '';
     const interface = document.createElement('div');
     interface.className = 'game-interface';
     interface.innerHTML = `
-        <h2>Welcome to the Dice Roller Game!</h2>
+        <h2>Welcome to the Dice Roller!</h2>
         <p>Choose a dice size:</p>
         <button onclick="rolldice(4)">d4</button>
         <button onclick="rolldice(6)">d6</button>

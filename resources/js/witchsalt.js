@@ -13,6 +13,7 @@ function startWitchSalt() {
 
     console.log('Starting Interface...');
     const witchSaltGame = document.querySelector('main');
+    witchSaltGame.innerHTML = '';
     const gameInterface = document.createElement('div');
     gameInterface.className = 'witchsalt-interface';
     gameInterface.innerHTML = `
