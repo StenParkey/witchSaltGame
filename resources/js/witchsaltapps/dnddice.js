@@ -40,19 +40,19 @@ function rolldice(diceroll) {
   
   
     if (diceroll) {
-      alert(`${savedusername}! You rolled a ${roll} on a d${diceroll}!`)
+      alert(`You rolled a ${roll} on a d${diceroll}!`)
     }
   
     // Critical success/fail checks
     if (diceroll === 100) {
       if (roll === 100) {
-        alert(`Insane Critical Success! Great job ${savedusername}`);
+        alert(`Insane Critical Success! Great job!`);
       } else if (roll === 1) {
         alert('Insane Critical Fail!');
       } 
     } else if (diceroll === 20) {
       if (roll === 20) {
-        alert(`Critical Success! Great job ${savedusername}`);
+        alert(`Critical Success! Great job!`);
       } else if (roll === 1) {
         alert('Critical Fail!');
       }

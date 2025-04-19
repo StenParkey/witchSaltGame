@@ -1,6 +1,17 @@
 function startWitchSalt() {
     // Loads the main witchSalt interface
     console.log('Starting WitchSalt game...');
+
+    console.log('Loading WitchSalt assets...');
+    const assetLoader = document.querySelector('head');
+    const witchSaltAssets = document.createElement('div');
+    witchSaltAssets.id = 'witchsalt-assets';
+    witchSaltAssets.innerHTML = `
+        <link rel="stylesheet" href="./resources/css/witchsalt.css">`;
+    assetLoader.appendChild(witchSaltAssets);
+    console.log('WitchSalt assets loaded successfully!');
+
+    console.log('Starting Interface...');
     const witchSaltGame = document.querySelector('main');
     const gameInterface = document.createElement('div');
     gameInterface.className = 'witchsalt-interface';
@@ -29,17 +40,34 @@ function startWitchSalt() {
     const statsDiv = document.getElementById('stats');
     statsDiv.innerHTML = `
         <div class="player-status">
-            <div class="health-bar">Health:</div>
-            <div class="energy-bar">Energy:</div>
+            <div class="health-bar">Health:
+                <div class="health-bar-fill" id="player-health"></div>
+            </div>
+            <div class="energy-bar">Energy:
+                <div class="energy-bar-fill" id="player-energy"></div>
+            </div>
         </div>
         <div class="player-stats">
-            <div class="stat">Str:</div>
-            <div class="stat">Dex:</div>
-            <div class="stat">Con:</div>
-            <div class="stat">Cha:</div>
-            <div class="stat">Wis:</div>
-            <div class="stat">Int:</div>
-            <div class="stat">Luck:</div>
+            <div class="stat">Str:
+                <div class="stat-fill" id="player-str-stat"></div>
+            </div>
+            <div class="stat">Dex:
+                <div class="stat-fill" id="player-dex-stat"></div>
+            </div>
+            <div class="stat">Con:
+                <div class="stat-fill" id="player-con-stat"></div>
+            </div>
+            <div class="stat">Cha:
+                <div class="stat-fill" id="player-cha-stat"></div>
+            </div>
+            <div class="stat">Wis:
+                <div class="stat-fill" id="player-wis-stat"></div>
+            </div>
+            <div class="stat">Int:
+                <div class="stat-fill" id="player-int-stat"></div>
+            </div>
+            <div class="stat">Luck:
+            </div>
         </div>`;
     console.log('Stats content created successfully!');
 
