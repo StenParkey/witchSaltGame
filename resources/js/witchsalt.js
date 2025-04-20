@@ -19,12 +19,32 @@ function startWitchSalt() {
     gameInterface.innerHTML = `
         <div class="leftside-toolbar" id="leftside-toolbar">
             <div class="equipped" id="equipped">
-                <div class="spell-book" id="spell-book"></div>
-                <div class="inventory" id="inventory"></div>
+                <div class="spell-book" id="spell-book">
+                    <div class="equipped-spell spell-slot-1" id="spell-slot-1"></div>
+                    <div class="equipped-spell spell-slot-2" id="spell-slot-2"></div>  
+                    <div class="equipped-spell spell-slot-3" id="spell-slot-3"></div>
+                    <div class="equipped-spell spell-slot-4" id="spell-slot-4"></div>
+                    <div class="equipped-spell spell-slot-5" id="spell-slot-5"></div>
+                    <div class="equipped-spell spell-slot-6" id="spell-slot-6"></div>
+                    <div class="equipped-spell quick-spell" id="quick-spell"></div>
+                </div>
+                <div class="inventory" id="inventory">
+                    <div class="equipped-item item-slot-head" id="item-slot-head"></div>
+                    <div class="equipped-item item-slot-chest" id="item-slot-chest"></div> 
+                    <div class="equipped-item item-slot-arms" id="item-slot-arms"></div>
+                    <div class="equipped-item item-slot-legs" id="item-slot-legs"></div>
+                    <div class="equipped-item item-slot-feet" id="item-slot-feet"></div>
+                    <div class="equipped-item item-slot-jewelry" id="item-slot-jewelry"></div>
+                    <div class="equipped-item item-slot-weapon" id="item-slot-weapon"></div>
+                </div>
             </div>
             <div class="unequipped" id="unequipped">
-                <div class="spells" id="spells"></div>
-                <div class="armory" id="armory"></div>
+                <div class="spells" id="spells">
+                    <div class="spells-button" id="spells-button"></div>
+                </div>
+                <div class="armory" id="armory">
+                    <div class="armory-button" id="armory-button"></div>
+                </div>
             </div>
         </div>
         <div class="game-area" id="game-area">
@@ -41,33 +61,43 @@ function startWitchSalt() {
     const statsDiv = document.getElementById('stats');
     statsDiv.innerHTML = `
         <div class="player-status">
-            <div class="health-bar">Health:
+            <div class="health-bar">
+                <span class="health-header">Health:</span>
                 <div class="health-bar-fill" id="player-health"></div>
             </div>
-            <div class="energy-bar">Energy:
+            <div class="energy-bar">
+                <span class="energy-header">Energy:</span>
                 <div class="energy-bar-fill" id="player-energy"></div>
             </div>
         </div>
         <div class="player-stats">
-            <div class="stat">Str:
+            <div class="stat"> 
+                <span class="stat-header">Str:</span>
                 <div class="stat-fill" id="player-str-stat"></div>
             </div>
-            <div class="stat">Dex:
+            <div class="stat"> 
+                <span class="stat-header">Dex:</span>
                 <div class="stat-fill" id="player-dex-stat"></div>
             </div>
-            <div class="stat">Con:
+            <div class="stat"> 
+                <span class="stat-header">Con:</span>
                 <div class="stat-fill" id="player-con-stat"></div>
             </div>
-            <div class="stat">Cha:
+            <div class="stat"> 
+                <span class="stat-header">Cha:</span>
                 <div class="stat-fill" id="player-cha-stat"></div>
             </div>
-            <div class="stat">Wis:
+            <div class="stat"> 
+                <span class="stat-header">Wis:</span>
                 <div class="stat-fill" id="player-wis-stat"></div>
             </div>
-            <div class="stat">Int:
+            <div class="stat"> 
+                <span class="stat-header">Int:</span>
                 <div class="stat-fill" id="player-int-stat"></div>
             </div>
-            <div class="stat">Luck:
+            <div class="stat"> 
+                <span class="stat-header">Luck:</span>
+                <div class="stat-fill" id="player-luck-stat"></div>
             </div>
         </div>`;
     console.log('Stats content created successfully!');

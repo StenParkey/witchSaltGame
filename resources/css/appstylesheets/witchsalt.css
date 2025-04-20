@@ -1,29 +1,19 @@
 main {
-    background-color: var(--ds_green_grey);
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: 1px solid var(--ds_dark_green);
   }
 
-  .witchsalt-interface,
-  .leftside-toolbar, 
-  .game-area, 
-  .logs, 
-  .stats, 
-  .dice-rolls {
-    border: 1px solid var(--ds_dark_green);
-  } 
-  
   /* Game Interface */
   .witchsalt-interface {
+    background-image: url("../assets/media/interfaceassets/uitest.jpg");
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: auto;
+    width: 800px;
+    height: 800px;
   }
   
     /* Leftside Toolbar */
@@ -47,7 +37,39 @@ main {
     display: flex;
     flex-direction: column;
   }
-  
+
+  .equipped-spell,
+  .quick-spell,
+  .equipped-item {
+    width: 100px;
+    height: 100px;
+    display: flex;
+  }
+
+  item-slot-head {}
+  item-slot-chest {}
+  item-slot-arms {}
+  item-slot-legs {}
+  item-slot-feet {}
+  item-slot-jewelry {}
+  item-slot-weapon {}
+
+  .spells-button {
+    background-image: url("../assets/media/interfaceassets/spellbookbutton.png");
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  .armory-button {
+    background-image: url("../assets/media/interfaceassets/armorybutton.png");
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  /*.spells-button:active {} */
+
   .spells,
   .armory {
     width: 100px;
@@ -88,13 +110,35 @@ main {
     width: 100%;
     height: 100%;
   }
-  
-  .player-stats {
+
+  .health-bar,
+  .energy-bar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
+  }
+
+  .health-bar-header,
+  .energy-bar-header {
+    display: inline-flex;
+    flex-direction: row;
+  }
+
+  .health-bar-fill,
+  .energy-bar-fill {
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .player-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 600px;
     height: 100%;
   }
   
@@ -105,7 +149,7 @@ main {
   .dice-buttons {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
   }
 
