@@ -5,8 +5,38 @@
   .dice-buttons {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .dice-buttons div{
+    display: flex;
+    width: 50px;
+    height: 50px;
     justify-content: center;
     align-items: center;
+  }
+
+  .d4-button {
+    background-image: url(../assets/media/interfaceassets/dicebuttons/d4.png);
+  }
+  .d6-button {
+    background-image: url(../assets/media/interfaceassets/dicebuttons/d6.png);
+  }
+  .d8-button {
+    background-image: url(../assets/media/interfaceassets/dicebuttons/d8.png);
+  }
+  .d10-button {
+    background-image: url(../assets/media/interfaceassets/dicebuttons/d10.png);
+  }
+  .d12-button {
+    background-image: url(../assets/media/interfaceassets/dicebuttons/d12.png);
+  }
+  .d20-button {
+    background-image: url(../assets/media/interfaceassets/dicebuttons/d20.png);
+  }
+  .d100-button {
+    background-image: url(../assets/media/interfaceassets/dicebuttons/d100.png);
   }
 
 /* Media Queries */

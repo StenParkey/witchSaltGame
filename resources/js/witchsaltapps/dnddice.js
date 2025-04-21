@@ -17,13 +17,29 @@ function startGame() {
     interface.innerHTML = `
         <h2>Welcome to the Dice Roller!</h2>
         <p>Choose a dice size:</p>
-        <button onclick="rolldice(4)">d4</button>
-        <button onclick="rolldice(6)">d6</button>
-        <button onclick="rolldice(8)">d8</button>
-        <button onclick="rolldice(10)">d10</button>
-        <button onclick="rolldice(12)">d12</button>
-        <button onclick="rolldice(20)">d20</button>
-        <button onclick="rolldice(100)">d100</button>`;
+        <div class="dice-buttons">
+            <div class="d4-button" onclick="rolldice(4)">
+                <span>4</span>
+            </div>
+            <div class="d6-button" onclick="rolldice(6)">
+                <span>6</span>
+            </div>
+            <div class="d8-button" onclick="rolldice(8)">  
+                <span>8</span>
+            </div>
+            <div class="d10-button" onclick="rolldice(10)">
+                <span>10</span>
+            </div>
+            <div class="d12-button" onclick="rolldice(12)">
+                <span>12</span>
+            </div>
+            <div class="d20-button" onclick="rolldice(20)">
+                <span>20</span>
+            </div>
+            <div class="d100-button" onclick="rolldice(100)">
+                <span>100</span>
+            </div>
+        </div>`;
     diceRollGameApp.appendChild(interface);
 }
 

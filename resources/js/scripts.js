@@ -31,32 +31,36 @@ document.getElementById('ee-search-bar').addEventListener('keypress', (event) =>
   }
 });
 
-// Variable to track if an app is already running
-let isRunning = false;
+// Variables to track if specific apps are running
+let isWitchSaltRunning = false;
+let isDndDiceRunning = false;
 
 function handleSearch() {
   const searchInput = document.getElementById('ee-search-bar').value.trim().toLowerCase();
-  
 
   if (searchInput === 'dnd dice') {
-    if (isRunning === false) {
-      console.log('initializing dnd dice roller app')
-      isRunning = true;
-      startGame(); 
+    if (!isDndDiceRunning) {
+      console.log('Initializing DnD Dice Roller app...');
+      isDndDiceRunning = true;
+      isWitchSaltRunning = false; // Stop WitchSalt if switching
+      startGame(); // Replace with your DnD Dice app initialization function
     } else {
-      console.log('App is already running!');
+      console.log('dnd dice Roller is already running!');
     }
   } else if (searchInput === 'witchsalt') {
-    if (isRunning === false) {
-      console.log('initializing witchsalt game')
-      isRunning = true;
-      startWitchSalt(); 
+    if (!isWitchSaltRunning) {
+      console.log('Initializing witchsalt game...');
+      isWitchSaltRunning = true;
+      isDndDiceRunning = false; // Stop DnD Dice if switching
+      startWitchSalt(); // Replace with your WitchSalt app initialization function
     } else {
-      console.log('Witchsalt is already running!');
+      console.log('witchsalt is already running!');
     }
   } else {
-      alert('Invalid search input. Try typing "dnd dice" or "witchsalt".');
+    alert('Invalid search input. Try typing "dnd dice" or "witchsalt".');
   }
+
+  // Clear the search bar after handling input
   document.getElementById('ee-search-bar').value = '';
 }
 console.log('Search bar functionality loaded successfully!');
