@@ -71,31 +71,31 @@ function startWitchSalt() {
             </div>
         </div>
         <div class="player-stats">
-            <div class="stat"> 
+            <div class="stat stat-str"> 
                 <span class="stat-header">Str:</span>
                 <div class="stat-fill" id="player-str-stat"></div>
             </div>
-            <div class="stat"> 
+            <div class="stat stat-dex"> 
                 <span class="stat-header">Dex:</span>
                 <div class="stat-fill" id="player-dex-stat"></div>
             </div>
-            <div class="stat"> 
+            <div class="stat stat-con"> 
                 <span class="stat-header">Con:</span>
                 <div class="stat-fill" id="player-con-stat"></div>
             </div>
-            <div class="stat"> 
+            <div class="stat stat-cha"> 
                 <span class="stat-header">Cha:</span>
                 <div class="stat-fill" id="player-cha-stat"></div>
             </div>
-            <div class="stat"> 
+            <div class="stat stat-wis"> 
                 <span class="stat-header">Wis:</span>
                 <div class="stat-fill" id="player-wis-stat"></div>
             </div>
-            <div class="stat"> 
+            <div class="stat stat-int"> 
                 <span class="stat-header">Int:</span>
                 <div class="stat-fill" id="player-int-stat"></div>
             </div>
-            <div class="stat"> 
+            <div class="stat stat-luck"> 
                 <span class="stat-header">Luck:</span>
                 <div class="stat-fill" id="player-luck-stat"></div>
             </div>
