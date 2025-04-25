@@ -40,18 +40,20 @@ main {
 
   .equipped-spell,
   .equipped-item,
-  .quick-spell,
-  .item-slot-head,
-  .item-slot-chest,
-  .item-slot-arms,
-  .item-slot-legs,
-  .item-slot-feet,
-  .item-slot-jewelry,
   .spells-button,
   .armory-button {
     width: 100%;
     height: 100%;
     display: flex;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .equipped-spell,
+  .equipped-item,
+  .spells-button,
+  .armory-button:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 8px 15px rgba(0, 0, 0, 0.3));
   }
 
   .armory-button {
@@ -206,10 +208,13 @@ main {
     height: 50px;
     justify-content: center;
     align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
 
   .dice-buttons div:hover {
     cursor: pointer;
+    transform: translate(5px, -5px) scale(1.1); 
+    filter: drop-shadow(0 8px 15px rgba(0, 0, 0, 0.3));
   }
 
   .d4-button {

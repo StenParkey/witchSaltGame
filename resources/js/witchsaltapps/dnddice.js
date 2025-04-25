@@ -17,6 +17,9 @@ function startGame() {
     interface.innerHTML = `
         <h2>Welcome to the Dice Roller!</h2>
         <p>Choose a dice size:</p>
+        <div class="dice-header">
+            <h4>Dice:</h4>
+        </div>
         <div class="dice-buttons">
             <div class="d4-button" onclick="rolldice(4)">
                 <span>4</span>
