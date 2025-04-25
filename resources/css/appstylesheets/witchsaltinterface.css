@@ -1,0 +1,159 @@
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Game Interface */
+  .witchsalt-interface {
+    background-image: url(../assets/media/interfaceassets/uitest.jpg);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 800px;
+  }
+  
+    /* Leftside Toolbar */
+  .leftside-toolbar {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    max-height: 800px;
+  }
+  
+  .equipped,
+  .unequipped {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .spell-book,
+  .inventory {
+    width: 100px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .equipped-spell,
+  .equipped-item,
+  .spells-button,
+  .armory-button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  .spells,
+  .armory {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Game Area*/
+  .game-area {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    max-height: 800px;
+  }
+  
+    /* Logs */
+  .logs {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+/* Bottom Toolbar */
+  .player-status {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+  }
+
+  .health-bar,
+  .energy-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .health-bar-header,
+  .energy-bar-header {
+    display: inline-flex;
+    flex-direction: row;
+  }
+
+  .health-bar-fill,
+  .energy-bar-fill {
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  /* Stats and Dice */
+  .player-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 600px;
+    height: 100%;
+  }
+
+  .stat {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+  }
+
+  .stats,
+  .dice-rolls {
+    width: 600px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dice-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+  }
+
+  .dice-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .dice-buttons div{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .dice-buttons div:hover {
+    cursor: pointer;
+    transform: translate(5px, -5px) scale(1.1); 
+    filter: drop-shadow(0 8px 15px rgba(0, 0, 0, 0.3));
+  }

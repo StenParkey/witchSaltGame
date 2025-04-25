@@ -5,10 +5,15 @@ function startWitchSalt() {
     // Loads Stylesheets for witchSalt
     console.log('Loading WitchSalt assets...');
     const assetLoader = document.querySelector('head');
-    const stylesheet = document.createElement('link');
-    stylesheet.rel = 'stylesheet';
-    stylesheet.href = './resources/css/appstylesheets/witchsalt.css';
-    assetLoader.appendChild(stylesheet);
+    const witchSaltInterface = document.createElement('link');
+    witchSaltInterface.rel = 'stylesheet';
+    witchSaltInterface.href = './resources/css/appstylesheets/witchsaltinterface.css';
+    assetLoader.appendChild(witchSaltInterface);
+    const witchSaltAssets = document.createElement('link');
+    witchSaltAssets.rel = 'stylesheet';
+    witchSaltAssets.href = './resources/css/appstylesheets/witchsaltassets.css';
+    assetLoader.appendChild(witchSaltAssets);
+
     console.log('WitchSalt assets loaded successfully!');
 
     console.log('Starting Interface...');

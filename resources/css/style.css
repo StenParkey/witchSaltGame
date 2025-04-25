@@ -59,37 +59,3 @@ nav {
   padding-bottom: 20px;
 }
 
-/* Media Queries */
-  /* Small Screens */
-    /* Portrait styles for small screens */ 
-@media (orientation: portrait) and (max-width: 600px) {
-  
-}
-
-    /* Landscape styles for small screens */
-@media (max-width: 600px) and (orientation: landscape) {
-  
-}
-
-  /* Medium Screens */
-    /* Portrait styles for medium screens */
-@media (min-width: 601px) and (max-width: 1024px) and (orientation: portrait) {
-
-}
-    /* Landscape styles for medium screens */
-@media (min-width: 601px) and (max-width: 1024px) and (orientation: landscape) {
-  
-}
-
-  /* Large Screens */
-      /* Large screen styles */
-@media (min-width: 1025px) {
-
-}
-
-@media print {
-  a[href^="http"]:after {
-    content: " (" attr(href) ")";
-  }
-}
-

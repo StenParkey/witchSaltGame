@@ -1,0 +1,75 @@
+/* Unequipped Spells and Spellbook Tool Bar Assets */
+.spells-button {
+    background-image: url(../assets/media/interfaceassets/spellbookbutton.png);
+  } 
+.spell-slot-1 {
+    background-image: url(../assets/media/interfaceassets/spellbookbuttons/spellslot1.png);
+  }
+.spell-slot-2 {
+    background-image: url(../assets/media/interfaceassets/spellbookbuttons/spellslot2.png);
+  }
+.spell-slot-3 {
+    background-image: url(../assets/media/interfaceassets/spellbookbuttons/spellslot3.png);
+  }
+.spell-slot-4 {
+    background-image: url(../assets/media/interfaceassets/spellbookbuttons/spellslot4.png);
+  }
+.spell-slot-5 {
+    background-image: url(../assets/media/interfaceassets/spellbookbuttons/spellslot5.png);
+  }
+.spell-slot-6 {
+    background-image: url(../assets/media/interfaceassets/spellbookbuttons/spellslot6.png);
+  }
+.quick-spell {
+    background-image: url(../assets/media/interfaceassets/spellbookbuttons/quickspell.png);
+  }
+
+
+/* Inventory and Armory Tool Bar Assets */
+.armory-button {
+    background-image: url(../assets/media/interfaceassets/armorybutton.png);
+  }
+.item-slot-weapon {
+    background-image: url(../assets/media/interfaceassets/inventorybuttons/itemslotweapon.png);
+  }
+.item-slot-head {
+    background-image: url(../assets/media/interfaceassets/inventorybuttons/itemslothead.png);
+  }
+.item-slot-chest {
+    background-image: url(../assets/media/interfaceassets/inventorybuttons/itemslotchest.png);
+  }
+.item-slot-arms {
+    background-image: url(../assets/media/interfaceassets/inventorybuttons/itemslotarms.png);
+  }
+.item-slot-legs {
+    background-image: url(../assets/media/interfaceassets/inventorybuttons/itemslotlegs.png);
+  }
+.item-slot-feet {
+    background-image: url(../assets/media/interfaceassets/inventorybuttons/itemslotfeet.png);
+  }
+.item-slot-jewelry {
+    background-image: url(../assets/media/interfaceassets/inventorybuttons/itemslotjewelry.png);
+  }
+
+/* Dice Button Assets */
+.d4-button {
+    background-image: url(../assets/media/interfaceassets/dicebuttons/d4.png);
+  }
+.d6-button {
+    background-image: url(../assets/media/interfaceassets/dicebuttons/d6.png);
+  }
+.d8-button {
+    background-image: url(../assets/media/interfaceassets/dicebuttons/d8.png);
+  }
+.d10-button {
+    background-image: url(../assets/media/interfaceassets/dicebuttons/d10.png);
+  }
+.d12-button {
+    background-image: url(../assets/media/interfaceassets/dicebuttons/d12.png);
+  }
+.d20-button {
+    background-image: url(../assets/media/interfaceassets/dicebuttons/d20.png);
+  }
+.d100-button {
+    background-image: url(../assets/media/interfaceassets/dicebuttons/d100.png);
+  }
