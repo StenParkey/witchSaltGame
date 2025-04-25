@@ -1,22 +1,6 @@
 function startWitchSalt() {
     // Loads the main witchSalt interface
     console.log('Starting WitchSalt game...');
-
-    // Loads Stylesheets for witchSalt
-    console.log('Loading WitchSalt assets...');
-    const assetLoader = document.querySelector('head');
-    const witchSaltInterface = document.createElement('link');
-    witchSaltInterface.rel = 'stylesheet';
-    witchSaltInterface.href = './resources/css/appstylesheets/witchsaltinterface.css';
-    assetLoader.appendChild(witchSaltInterface);
-    const witchSaltAssets = document.createElement('link');
-    witchSaltAssets.rel = 'stylesheet';
-    witchSaltAssets.href = './resources/css/appstylesheets/witchsaltassets.css';
-    assetLoader.appendChild(witchSaltAssets);
-
-    console.log('WitchSalt assets loaded successfully!');
-
-    console.log('Starting Interface...');
     const witchSaltGame = document.querySelector('main');
     witchSaltGame.innerHTML = '';
     const gameInterface = document.createElement('div');

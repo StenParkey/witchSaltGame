@@ -1,15 +1,5 @@
-
 function startGame() {
-    console.log('Loading DnD Dice assets...');
-    const assetLoader = document.querySelector('head');
-    const dndDiceAssets = document.createElement('div');
-    dndDiceAssets.id = 'dnd-dice-assets';
-    dndDiceAssets.innerHTML = ``;
-    dndDiceAssets.innerHTML = `
-        <link rel="stylesheet" href="./resources/css/appstylesheets/dnddice.css">`;
-    assetLoader.appendChild(dndDiceAssets);
-    console.log('WitchSalt assets loaded successfully!');
-
+    console.log('Loading DnD Dice... ');
     const diceRollGameApp = document.querySelector('main');
     diceRollGameApp.innerHTML = '';
     const interface = document.createElement('div');
@@ -47,7 +37,6 @@ function startGame() {
 }
 
 function rolldice(diceroll) {
-
     let roll;
     if (diceroll === 100) {
       roll = Math.floor(Math.random() * 100) + 1;
@@ -67,7 +56,6 @@ function rolldice(diceroll) {
       console.log("Invalid dice size! Chose from 4, 6, 8, 10, 12, 20, or 100.");
       return;
     }
-  
   
     if (diceroll) {
       alert(`You rolled a ${roll} on a d${diceroll}!`)

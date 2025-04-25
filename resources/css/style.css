@@ -3,11 +3,6 @@
   src: url(fonts/memprop5x6.TTF)
 }
 
-body {
-  background-color: var(--ds_black);
-  font-family: memprop5x6, monospace, sans-serif;
-}
-
 :root {
   /* dogsalt_ official color pallate */
   --ds_dark_purple: #41344D;
@@ -27,6 +22,11 @@ body {
   --ds_dark_tan: #BF895A;
   --ds_light_tan: #F7D9B7;
   --ds_black: #000000;
+}
+
+body {
+  background-color: var(--ds_black);
+  font-family: memprop5x6, monospace, sans-serif;
 }
 
 /* Title Area */

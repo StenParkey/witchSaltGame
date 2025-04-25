@@ -1,5 +1,19 @@
-// Backend loading for WitchSalt.js and  witch Salt Apps
-console.log('loading scripts.js...');
+// Backend loading for stylesheets and scripts
+console.log('loading stylesheets...');
+const stylesheets = [
+  './resources/css/appstylesheets/witchsaltinterface.css',
+  './resources/css/appstylesheets/witchsaltgameassets.css', 
+  './resources/css/mediaqueries.css'
+];
+stylesheets.forEach((href) => {
+  const link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = href;
+  document.head.appendChild(link);
+});
+console.log('WitchSalt stylesheets loaded successfully!');
+
+console.log('loading scripts...');
 const scripts = [
   './resources/js/witchsalt.js',
   './resources/js/witchsaltapps/dnddice.js',
@@ -18,7 +32,7 @@ scripts.forEach((src) => {
 });
 console.log('WitchSalt scripts loaded successfully!');
 
-// Function for Search Bar form
+// Function for Search Bar form functionality
 console.log('loading searchbar form functionality...');
 document.getElementById('ee-search-btn').addEventListener('click', () => {
   handleSearch();
