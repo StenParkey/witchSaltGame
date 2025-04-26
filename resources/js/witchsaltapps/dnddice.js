@@ -58,25 +58,25 @@ function rolldice(diceroll) {
     }
   
     if (diceroll) {
-      alert(`You rolled a ${roll} on a d${diceroll}!`)
+      console.log(`You rolled a ${roll} on a d${diceroll}!`)
     }
   
     // Critical success/fail checks
     if (diceroll === 100) {
       if (roll === 100) {
-        alert(`Insane Critical Success! Great job!`);
+        console.log(`Insane Critical Success! Great job!`);
       } else if (roll === 1) {
-        alert('Insane Critical Fail!');
+        console.log('Insane Critical Fail!');
       } 
     } else if (diceroll === 20) {
       if (roll === 20) {
-        alert(`Critical Success! Great job!`);
+        console.log(`Critical Success! Great job!`);
       } else if (roll === 1) {
-        alert('Critical Fail!');
+        console.log('Critical Fail!');
       }
     } else {
       if (roll === 1) {
-        alert('Weak hit!');
+        console.log('Weak hit!');
       }
     }
   
