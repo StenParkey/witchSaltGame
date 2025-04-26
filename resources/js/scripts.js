@@ -18,7 +18,7 @@ const scripts = [
   './resources/js/witchsalt.js',
   './resources/js/witchsaltapps/dnddice.js',
   './resources/js/witchsaltapps/spellbook.js',
-  './resources/js/witchsaltapps/logs.js',
+  './resources/js/witchsaltapps/logs.js'
 ];
 
 scripts.forEach((src) => {
