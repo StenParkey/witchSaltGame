@@ -1,8 +1,9 @@
 main {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 100vw; 
+  height: 100vh; 
 }
 
   /* Game Interface */
@@ -80,8 +81,8 @@ main {
 .right-side-area {
   display: flex;
   flex-direction: column;
-  max-width: 600px;
-  max-height: 800px;
+  width: 600px;
+  height: 800px;
 }
   
 /* Logs */
@@ -89,7 +90,29 @@ main {
   width: 600px;
   height: 600px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  overflow-y: auto; 
+  background-color: rgba(0, 0, 0, 0.8); 
+  color: white; 
+  font-family: monospace; 
+  scrollbar-width: auto;
+}
+
+.log-entry {
+  margin: 5px 10px;
+}
+
+.logs::-webkit-scrollbar {
+  width: 16px; 
+}
+
+.logs::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5); 
+  border-radius: 4px; 
+}
+
+.logs::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.5); / 
 }
   
 /* Bottom Toolbar */

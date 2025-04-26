@@ -37,48 +37,48 @@ function startGame() {
 }
 
 function rolldice(diceroll) {
-    let roll;
-    if (diceroll === 100) {
-      roll = Math.floor(Math.random() * 100) + 1;
-    } else if (diceroll === 20) {
-      roll = Math.floor(Math.random() * 20) + 1; 
-    } else if (diceroll === 12) {
-      roll = Math.floor(Math.random() * 12) + 1;
-    } else if (diceroll === 10) {
-      roll = Math.floor(Math.random() * 10) + 1;
-    } else if (diceroll === 8) {
-      roll = Math.floor(Math.random() * 8) + 1;
-    } else if (diceroll === 6) {
-      roll = Math.floor(Math.random() * 6) + 1;
-    } else if (diceroll === 4) {
-      roll = Math.floor(Math.random() * 4) + 1;
-    } else {
-      console.log("Invalid dice size! Chose from 4, 6, 8, 10, 12, 20, or 100.");
-      return;
+  let roll;
+  if (diceroll === 100) {
+    roll = Math.floor(Math.random() * 100) + 1;
+  } else if (diceroll === 20) {
+    roll = Math.floor(Math.random() * 20) + 1; 
+  } else if (diceroll === 12) {
+    roll = Math.floor(Math.random() * 12) + 1;
+  } else if (diceroll === 10) {
+    roll = Math.floor(Math.random() * 10) + 1;
+  } else if (diceroll === 8) {
+    roll = Math.floor(Math.random() * 8) + 1;
+  } else if (diceroll === 6) {
+    roll = Math.floor(Math.random() * 6) + 1;
+  } else if (diceroll === 4) {
+    roll = Math.floor(Math.random() * 4) + 1;
+  } else {
+    console.log("Invalid dice size! Choose from 4, 6, 8, 10, 12, 20, or 100.");
+    return;
+  }
+
+  // Log the dice roll result
+  const message = `You rolled a ${roll} on a d${diceroll}!`;
+  addLogMessage(message);
+
+  // Critical success/fail checks
+  if (diceroll === 100) {
+    if (roll === 100) {
+      addLogMessage(`Insane Critical Success! Great job!`);
+    } else if (roll === 1) {
+      addLogMessage('Insane Critical Fail!');
+    } 
+  } else if (diceroll === 20) {
+    if (roll === 20) {
+      addLogMessage(`Critical Success! Great job!`);
+    } else if (roll === 1) {
+      addLogMessage('Critical Fail!');
     }
-  
-    if (diceroll) {
-      console.log(`You rolled a ${roll} on a d${diceroll}!`)
+  } else {
+    if (roll === 1) {
+      addLogMessage('Weak hit!');
     }
-  
-    // Critical success/fail checks
-    if (diceroll === 100) {
-      if (roll === 100) {
-        console.log(`Insane Critical Success! Great job!`);
-      } else if (roll === 1) {
-        console.log('Insane Critical Fail!');
-      } 
-    } else if (diceroll === 20) {
-      if (roll === 20) {
-        console.log(`Critical Success! Great job!`);
-      } else if (roll === 1) {
-        console.log('Critical Fail!');
-      }
-    } else {
-      if (roll === 1) {
-        console.log('Weak hit!');
-      }
-    }
-  
-    return roll;
-  };
+  }
+
+  return roll;
+}

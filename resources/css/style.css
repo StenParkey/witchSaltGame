@@ -43,6 +43,7 @@ header {
   text-align: center;
   color: var(--ds_dark_green);
   font-size:72px;
+  margin: 20px 0px;
 }
 
 .title h2 {
@@ -56,6 +57,5 @@ nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-bottom: 20px;
 }
 

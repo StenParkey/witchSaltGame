@@ -1,33 +1,31 @@
-
-  /* Small Screens */
-    /* Portrait styles for small screens */ 
-@media (orientation: portrait) and (max-width: 600px) {
-  
+/* Scale for smaller screens */
+@media (max-width: 1024px) {
+  .witchsalt-interface {
+    transform: scale(0.6); 
+    transform-origin: center; 
+  }
 }
 
-    /* Landscape styles for small screens */
-@media (max-width: 600px) and (orientation: landscape) {
-  
+/* Scale for even smaller screens */
+@media (max-width: 768px) {
+  .witchsalt-interface {
+    transform: scale(0.4); 
+    transform-origin: center; 
+  }
 }
 
-  /* Medium Screens */
-    /* Portrait styles for medium screens */
-@media (min-width: 601px) and (max-width: 1024px) and (orientation: portrait) {
-
-}
-    /* Landscape styles for medium screens */
-@media (min-width: 601px) and (max-width: 1024px) and (orientation: landscape) {
-  
+/* Scale for medium screens */
+@media (min-width: 1025px) and (max-width: 1439px) {
+  .witchsalt-interface {
+    transform: scale(0.69); 
+    transform-origin: center; 
+  }
 }
 
-  /* Large Screens */
-      /* Large screen styles */
-@media (min-width: 1025px) {
-
-}
-
-@media print {
-  a[href^="http"]:after {
-    content: " (" attr(href) ")";
+/* Scale for larger screens */
+@media (min-width: 1440px) {
+  .witchsalt-interface {
+    transform: scale(0.9); 
+    transform-origin: center; 
   }
 }
