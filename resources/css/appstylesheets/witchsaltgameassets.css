@@ -51,6 +51,29 @@
     background-image: url(../assets/media/interfaceassets/inventorybuttons/itemslotjewelry.png);
   }
 
+.stat-str {
+  background-image: url(../assets/media/interfaceassets/statbuttons/str.png);
+}
+.stat-dex {
+  background-image: url(../assets/media/interfaceassets/statbuttons/dex.png);
+}
+.stat-con {
+  background-image: url(../assets/media/interfaceassets/statbuttons/cons.png);
+}
+.stat-cha {
+  background-image: url(../assets/media/interfaceassets/statbuttons/cha.png);
+}
+.stat-wis {
+  background-image: url(../assets/media/interfaceassets/statbuttons/wis.png);
+}
+.stat-int {
+  background-image: url(../assets/media/interfaceassets/statbuttons/int.png);
+}
+.stat-luck {
+  background-image: url(../assets/media/interfaceassets/statbuttons/luck.png);
+}
+
+
 /* Dice Button Assets */
 .d4-button {
     background-image: url(../assets/media/interfaceassets/dicebuttons/d4.png);

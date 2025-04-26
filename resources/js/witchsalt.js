@@ -6,9 +6,9 @@ function startWitchSalt() {
     const gameInterface = document.createElement('div');
     gameInterface.className = 'witchsalt-interface';
     gameInterface.innerHTML = `
-        <div class="leftside-toolbar" id="leftside-toolbar">
-            <div class="equipped" id="equipped">
-                <div class="spell-book" id="spell-book">
+        <div class="leftside-toolbar">
+            <div class="equipped">
+                <div class="spell-book">
                     <div class="equipped-spell spell-slot-1" id="spell-slot-1"></div>
                     <div class="equipped-spell spell-slot-2" id="spell-slot-2"></div>  
                     <div class="equipped-spell spell-slot-3" id="spell-slot-3"></div>
@@ -17,7 +17,7 @@ function startWitchSalt() {
                     <div class="equipped-spell spell-slot-6" id="spell-slot-6"></div>
                     <div class="equipped-spell quick-spell" id="quick-spell"></div>
                 </div>
-                <div class="inventory" id="inventory">
+                <div class="inventory">
                     <div class="equipped-item item-slot-head" id="item-slot-head"></div>
                     <div class="equipped-item item-slot-chest" id="item-slot-chest"></div> 
                     <div class="equipped-item item-slot-arms" id="item-slot-arms"></div>
@@ -27,7 +27,7 @@ function startWitchSalt() {
                     <div class="equipped-item item-slot-weapon" id="item-slot-weapon"></div>
                 </div>
             </div>
-            <div class="unequipped" id="unequipped">
+            <div class="unequipped">
                 <div class="spells" id="spells">
                     <div class="spells-button" id="spells-button"></div>
                 </div>
@@ -36,7 +36,7 @@ function startWitchSalt() {
                 </div>
             </div>
         </div>
-        <div class="game-area" id="game-area">
+        <div class="right-side-area">
             <div class="logs" id="logs"></div>
             <div class="stats" id="stats"></div>
             <div class="dice-rolls" id="dice-rolls"></div>
@@ -93,11 +93,11 @@ function startWitchSalt() {
 
 
     // Loads elements for dice rolls section
-    console.log('Creating dice rolls content...');
+    console.log('Creating dice content...');
     const diceRollsDiv = document.getElementById('dice-rolls');
     diceRollsDiv.innerHTML = `
         <div class="dice-header">
-            <h4>Dice:</h4>
+            <h5>Dice:</h5>
         </div>
         <div class="dice-buttons">
             <div class="d4-button" onclick="rolldice(4)">
@@ -122,7 +122,7 @@ function startWitchSalt() {
                 <span>100</span>
             </div>
         </div>`;
-    console.log('Dice rolls content created successfully!');
+    console.log('Dice content created successfully!');
 
 
     console.log('WitchSalt game started successfully!');
