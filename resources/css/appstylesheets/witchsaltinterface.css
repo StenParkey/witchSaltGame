@@ -6,6 +6,23 @@ main {
   height: 100vh; 
 }
 
+ /* Character Select */
+ .character-select h2{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: var(--ds_dark_green);
+  font-size: 37px;
+}
+
+.character-select-error {
+  color: var(--ds_light_red);
+  font-size: 20px;
+  text-align: center;
+  margin: 10px 0px;
+  display: none;
+}
+
   /* Game Interface */
 .witchsalt-interface {
   background-image: url(../assets/media/interfaceassets/uitest.jpg);
