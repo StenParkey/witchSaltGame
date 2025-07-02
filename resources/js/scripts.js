@@ -1,4 +1,7 @@
 // Backend loading for stylesheets and scripts
+
+/* BIG NOTE! Yes i understand this is not a good way to load in scripts for security reasons. I havent worked much more on this project, as
+ive been trying to focus on my codecademy courses so i can learn the best practices for what im trying to do in this project.*/
 console.log('loading stylesheets...');
 const stylesheets = [
   './resources/css/appstylesheets/witchsaltinterface.css',
